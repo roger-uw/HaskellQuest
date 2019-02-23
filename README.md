@@ -8,29 +8,29 @@
 
 1. Install the Haskell Tool Stack
 
-Please visit [the stack website](https://docs.haskellstack.org/en/stable/install_and_upgrade/#windows) and install stack according to the instructions on the webpage.
+   Please visit [the stack website](https://docs.haskellstack.org/en/stable/install_and_upgrade/#windows) and install stack according to the instructions on the webpage.
 
 2. Install GHC and other libraries
 
-- Run the following command.
+   - Run the following command.
 
-  ```
-  stack --version
-  ```
+     ```
+     stack --version
+     ```
 
-  If no error occurs and the version of stack is correctly shown, the installation of stack was successful. If not, please try installing it again.
+     If no error occurs and the version of stack is correctly shown, the installation of stack was successful. If not, please try installing it again.
 
-- Run the following commands sequentially to install [GHC](https://www.haskell.org/ghc/), [QuickCheck](http://hackage.haskell.org/package/QuickCheck) and [th-alpha](http://hackage.haskell.org/package/th-alpha).
+   - Run the following commands sequentially to install [GHC](https://www.haskell.org/ghc/), [QuickCheck](http://hackage.haskell.org/package/QuickCheck) and [th-alpha](http://hackage.haskell.org/package/th-alpha).
 
-  ```
-  stack --resolver lts-9.17 setup
-  stack update
-  ghc-pkg recache
-  stack install QuickCheck
-  stack install th-alpha
-  ```
+     ```
+     stack --resolver lts-9.17 setup
+     stack update
+     ghc-pkg recache
+     stack install QuickCheck
+     stack install th-alpha
+     ```
 
-  Some commands may take longer to complete, depending on the Internet condition and computer performance. The command screen may be flushed with massive progress information. If a command ends with a “Permission Denied” error, run it again. This step may take 20 ~ 30 minutes in total.
+     Some commands may take longer to complete, depending on the Internet condition and computer performance. The command screen may be flushed with massive progress information. If a command ends with a “Permission Denied” error, run it again. This step may take 20 ~ 30 minutes in total.
 
 3. Start HaskellQuest
 
@@ -74,10 +74,10 @@ Coming soon
 
    Solution: Try again with the following commands.
 
-```
-stack config set resolver lts-9.17
-stack setup
-stack update
-stack install QuickCheck
-stack install th-alpha
-```
+   ```
+   stack config set resolver lts-9.17
+   stack setup
+   stack update
+   stack install QuickCheck
+   stack install th-alpha
+   ```
