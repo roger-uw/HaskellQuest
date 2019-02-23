@@ -1,0 +1,5 @@
+{
+  "template": " (  (3.14 :: [-??-]) + ([-??-] :: Double)  )\n (  (3 :: [-??-]) * (5 :: Int)  )\n (  (7 - (19 :: Float)) :: [-??-]  )\n (  ([-??-] :: Bool) || False  )",
+  "prefix": "expr :: Comp\nexpr = Comp\n",
+  "postfix": ""
+}

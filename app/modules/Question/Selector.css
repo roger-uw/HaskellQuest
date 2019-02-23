@@ -1,0 +1,111 @@
+.incompleteDot {
+  height: 0.5em;
+  width: 0.5em;
+  margin-right: 0.5em;
+  background-color: rgb(82, 175, 53);
+
+  /* border-radius: 50%; */
+  position: relative;
+  display: inline-block;
+}
+
+.timedDot {
+  composes: incompleteDot;
+  background-color: rgb(214, 115, 49);
+}
+
+.selectorHead {
+  color: var(--global-fc);
+  margin-bottom: 2em;
+}
+
+.selectorHead h1 {
+  text-align: center;
+  font-size: 4em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.selectorHead h5 {
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.selector {
+  display: -webkit-flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.selector button {
+  margin-bottom: 1.5em;
+}
+
+.select {
+  composes: haskellQuestButton from '../shared.css';
+}
+
+.selectNew {
+  composes: haskellQuestButtonGlow from '../shared.css';
+}
+
+.chptSelector {
+  display: -webkit-flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.currentChpt,
+.otherChpt,
+.newChptAvailable,
+.newChptUnavailable {
+  font: var(--global-font);
+  height: 3em;
+  margin: 0 1em 0;
+  position: relative;
+  display: inline-block;
+  border-style: solid;
+  border-color: transparent;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-top-width: 1.2em;
+  border-bottom-width: 1.2em;
+  box-sizing: border-box;
+  background-clip: padding-box;
+  outline: none;
+  transition: 0.3s;
+}
+
+.currentChpt {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.otherChpt {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.otherChpt:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.newChptAvailable {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-image: linear-gradient(
+      transparent,
+      transparent 12%,
+      rgba(255, 255, 255, 0.9) 50%,
+      transparent 88%,
+      transparent
+    )
+    10;
+}
+
+.newChptAvailable:hover {
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+.newChptUnavailable {
+  background-color: rgba(119, 119, 119, 0.4);
+}

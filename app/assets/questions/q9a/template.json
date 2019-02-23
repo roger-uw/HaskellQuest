@@ -1,0 +1,5 @@
+{
+  "template": "x = 0\ny = 5\n[-x = 1-]\n[-x = x + y-]",
+  "prefix": "",
+  "postfix": ""
+}

@@ -1,0 +1,5 @@
+{
+  "template": "type PointX = Double\ntype PointY = Double\ntype CentreX = Double\ntype CentreY = Double\ntype Radius = Double\n\nsquare :: Double -> Double\nsquare x = x * x\n\nisInCircle :: PointX -> PointY -> CentreX -> CentreY -> Radius -> Bool\nisInCircle pX pY cX cY r = square r > [-??-]",
+  "prefix": "",
+  "postfix": ""
+}

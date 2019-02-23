@@ -1,0 +1,5 @@
+{
+  "template": "mean :: Double\nmean = (10.01 + [-??-] + 9.92 + 10.01 + 9.97) / 5\nresult :: [-??-]\n[-??-] = mean >= 9.95 && mean [-??-] 10.05",
+  "prefix": "",
+  "postfix": ""
+}

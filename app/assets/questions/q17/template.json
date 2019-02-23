@@ -1,0 +1,5 @@
+{
+  "template": "isLeap :: Int -> Bool\nisLeap y\n  | mod y 4 /= 0 = False\n  | [-??-]",
+  "prefix": "",
+  "postfix": ""
+}

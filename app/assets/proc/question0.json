@@ -1,0 +1,30 @@
+[
+  {
+    "tag": "qtest0",
+    "isOptional": false,
+    "title": "Example0",
+    "isComplete": true,
+    "reward": 10,
+    "restReward": 0,
+    "isTimed": false,
+    "expectedTime": 60,
+    "timeTaken": 0,
+    "attempts": [
+      "fibs :: ??\nfibs = 0 : 1 : ??",
+      "fibs :: [Int]\nfibs = 0 : 1 : zipWith (+) fibs (tail fibs)",
+      "fibs :: [Integer]\nfibs = 0 : 1 : zipWith (+) fibs (tail fibs)"
+    ]
+  },
+  {
+    "tag": "qtest1",
+    "isOptional": true,
+    "title": "Example1",
+    "isComplete": false,
+    "reward": 10,
+    "restReward": 10,
+    "isTimed": false,
+    "expectedTime": 60,
+    "timeTaken": 0,
+    "attempts": []
+  }
+]

@@ -1,0 +1,28 @@
+::-webkit-scrollbar {
+  height: 0.7em;
+  width: 0.7em;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+:root {
+  --global-font: 1.5vw 'Myriad Pro', Helvetica, sans-serif;
+  --global-text-padding: 0.7em;
+  --global-bg: rgb(69, 58, 98);
+  --global-fg: rgba(112, 61, 109, 0.8);
+  --global-fg-bright: rgba(196, 145, 193, 0.8);
+  --global-fg-dark: rgba(81, 45, 79, 0.8);
+  --global-fc: rgb(240, 240, 240);
+  --global-sd: -0.2em 0.2em 10px 0 rgba(0, 0, 0, 0.2);
+  --global-letter-spacing: 0.06em;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.6);
+}

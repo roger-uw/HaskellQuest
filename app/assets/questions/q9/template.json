@@ -1,0 +1,5 @@
+{
+  "template": "mean :: Double\nmean = (10.01 + 10.05 + 9.92 + 10.01 + 9.97) / 5\n\nvar :: [-??-]\nvar = (\n  (10.01 - mean) ** 2 + \n  (10.05 - [-??-]) ** 2 + \n  (9.92 - mean) ** 2 + \n  ([-??-] - mean) ** 2 + \n  (9.97 - mean) ** 2\n  ) / 5\n\nresult :: Bool\n[-??-] = v[-??-] < 0.003",
+  "prefix": "",
+  "postfix": ""
+}

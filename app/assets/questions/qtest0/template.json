@@ -1,0 +1,5 @@
+{
+  "template": "fibs :: [-??-]\nfibs = 0 : 1 : [-??-]",
+  "prefix": "",
+  "postfix": ""
+}

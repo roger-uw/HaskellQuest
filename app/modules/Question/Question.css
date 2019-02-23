@@ -1,0 +1,111 @@
+.questionDesc {
+  color: var(--global-fc);
+  line-height: 1.5em;
+}
+
+.questionHead {
+  color: var(--global-fc);
+  line-height: normal;
+}
+
+.reload,
+.clear,
+.submit,
+.back {
+  composes: haskellQuestButton from '../shared.css';
+}
+
+.backNew {
+  composes: haskellQuestButtonGlow from '../shared.css';
+}
+
+.reload,
+.clear {
+  float: left;
+}
+
+.reload {
+  border-right: none;
+}
+
+.submit {
+  float: right;
+  margin-right: 6vw;
+}
+
+.editor {
+  /* width: 40%; */
+  clear: both;
+}
+
+.question table {
+  padding: 0;
+}
+
+.question table tr {
+  margin: 0;
+  padding: 0;
+}
+
+.question table tr th {
+  padding: 0 1em 0;
+}
+
+.question table tr td {
+  padding: 0 1em 0;
+}
+
+.question table tr th :first-child,
+.question table tr td :first-child {
+  margin-top: 0;
+}
+
+.question table tr th :last-child,
+.question table tr td :last-child {
+  margin-bottom: 0;
+}
+
+.questionDesc code {
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(240, 240, 240);
+  background-color: rgb(53, 53, 53);
+  padding: 0 0.3em 0;
+  border-radius: 0.2em;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.questionHead code {
+  /* font-family: "Courier New", Courier, monospace; */
+  color: rgb(240, 240, 240);
+  background-color: var(--global-fg);
+  padding: 0 0.3em 0;
+  border-radius: 0.2em;
+  margin-left: 0.5em;
+  letter-spacing: 0;
+}
+
+.questionDesc pre code {
+  white-space: pre;
+  line-height: 1em;
+  padding: 0.25em 0.3em 0.25em 0;
+}
+
+.questionDesc img {
+  max-width: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.questionDesc a:link {
+  color: var(--global-fc);
+}
+
+.questionDesc a:hover {
+  color: var(--global-fc);
+}
+
+.questionDesc a:visited {
+  color: var(--global-fg-bright);
+}

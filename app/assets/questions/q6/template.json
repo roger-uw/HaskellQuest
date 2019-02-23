@@ -1,0 +1,5 @@
+{
+  "template": "(7.5 + [-??-] >= (13.9 :: Double)) == (5 * [-??-] <= (13 :: Int))",
+  "prefix": "expr :: Bool\nexpr =",
+  "postfix": ""
+}

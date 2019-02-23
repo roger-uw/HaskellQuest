@@ -1,0 +1,1 @@
+Multiple declarations of `x`.

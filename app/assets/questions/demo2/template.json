@@ -1,0 +1,5 @@
+{
+  "template": "the [-??-] project",
+  "prefix": "expr :: String\nexpr = \"",
+  "postfix": "\""
+}

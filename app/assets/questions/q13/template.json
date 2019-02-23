@@ -1,0 +1,5 @@
+{
+  "template": "square :: Double -> Double\nsquare x = x * x\n\nhasRoot :: Double -> Double -> Double -> Bool\nhasRoot a b c = [-??-] >= 0",
+  "prefix": "",
+  "postfix": ""
+}

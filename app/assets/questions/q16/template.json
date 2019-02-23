@@ -1,0 +1,5 @@
+{
+  "template": "triples :: Int -> [[Int]]\ntriples r = [[r + s, r + t, r + s + t] | [-\n  ??\n  -]s <- [-??-], \n  t <- [-??, \n  ??-]]",
+  "prefix": "",
+  "postfix": ""
+}

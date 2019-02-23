@@ -1,0 +1,5 @@
+{
+  "template": "myLength :: [a] -> Int\n[-??-]",
+  "prefix": "",
+  "postfix": ""
+}

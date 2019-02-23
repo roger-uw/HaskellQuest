@@ -1,28 +1,22 @@
 import React from 'react';
-import { render } from 'react-dom';
-import { AppContainer } from 'react-hot-loader';
-import Root from './containers/Root';
-import { configureStore, history } from './store/configureStore';
-import './app.global.css';
+import ReactDOM from 'react-dom';
+import { ipcRenderer } from 'electron';
+import './index.global.css';
+import App from './modules/App/App';
 
-const store = configureStore();
-
-render(
-  <AppContainer>
-    <Root store={store} history={history} />
-  </AppContainer>,
-  document.getElementById('root')
-);
-
-if (module.hot) {
-  module.hot.accept('./containers/Root', () => {
-    // eslint-disable-next-line global-require
-    const NextRoot = require('./containers/Root').default;
-    render(
-      <AppContainer>
-        <NextRoot store={store} history={history} />
-      </AppContainer>,
-      document.getElementById('root')
-    );
+window.onerror = function handleGlobalErrors(
+  message,
+  source,
+  lineno,
+  colno,
+  error
+) {
+  ipcRenderer.send('error-channel', {
+    errName: error.name,
+    errMsg: error.message,
+    isCaught: false
   });
-}
+  return true;
+};
+
+ReactDOM.render(<App />, document.getElementById('root'));

@@ -1,0 +1,3 @@
+{
+  "template": "square :: Double -> Double\nsquare x = x * x\n\nhasRoot :: Double -> Double -> Double -> Bool\nhasRoot a b c = [-square b - 4 * a * c-] >= 0"
+}

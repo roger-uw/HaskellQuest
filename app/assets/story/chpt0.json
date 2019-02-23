@@ -1,0 +1,1484 @@
+{
+  "title": "Prelude",
+  "entryMark": 0.0,
+  "sections": [
+    {
+      "tag": "jump",
+      "messages": [],
+      "endDelay": 0.0,
+      "question": null,
+      "branch": {
+        "uncondTo": "tsec0",
+        "options": null
+      }
+    },
+    {
+      "tag": "tsec0",
+      "messages": [
+        {
+          "sender": "Alvin",
+          "delay": 2.0,
+          "content": "This is test Section 0."
+        },
+        {
+          "sender": "Alvin",
+          "delay": 2.0,
+          "content": "The story will proceed to Section 1 unconditionally."
+        },
+        {
+          "sender": "Alvin",
+          "delay": 2.0,
+          "content": "A timed question should be shown now."
+        }
+      ],
+      "endDelay": 0.0,
+      "question": {
+        "tag": "qtest0",
+        "title": "Example0",
+        "reward": 10.0,
+        "expectedTime": 60,
+        "isTimed": true,
+        "isOptional": false
+      },
+      "branch": {
+        "uncondTo": "tsec1",
+        "options": null
+      }
+    },
+    {
+      "tag": "tsec1",
+      "messages": [
+        {
+          "sender": "Dr Wilson",
+          "delay": 2.0,
+          "content": "This test is a loop."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 2.0,
+          "content": "You can choose to stay or go back to Section 0."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 2.0,
+          "content": "This section contains an optional question."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 2.0,
+          "content": "Question list should not be altered by looping."
+        }
+      ],
+      "endDelay": 0.0,
+      "question": {
+        "tag": "qtest1",
+        "title": "Example1",
+        "reward": 10.0,
+        "expectedTime": 60,
+        "isTimed": false,
+        "isOptional": true
+      },
+      "branch": {
+        "uncondTo": null,
+        "options": [
+          {
+            "content": "Stay in Section 1",
+            "branchTo": "tsec1"
+          },
+          {
+            "content": "Go back to Section 0",
+            "branchTo": "tsec0"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "sec0",
+      "messages": [
+        {
+          "sender": "system",
+          "delay": 2.0,
+          "content": "Ponector network established"
+        },
+        {
+          "sender": "system",
+          "delay": 1.0,
+          "content": "Logged in as \"Harley\""
+        },
+        {
+          "sender": "Alvin",
+          "delay": 1.0,
+          "content": "hello?"
+        },
+        {
+          "sender": "Alvin",
+          "delay": 3.0,
+          "content": "anyone here?"
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 2.0,
+          "content": "Hi"
+        },
+        {
+          "sender": "Alvin",
+          "delay": 3.0,
+          "content": "Hi, Dr Wilson, when shall we start?"
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 2.0,
+          "content": "Sorry, just a second"
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 5.0,
+          "content": "So, Harley and Alvin"
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 4.0,
+          "content": "@Harley could you please say something so I know that you can see our messages?"
+        },
+        {
+          "sender": "system",
+          "delay": 1.0,
+          "content": "Dr Wilson mentioned you in conversation"
+        }
+      ],
+      "endDelay": 0.0,
+      "question": null,
+      "branch": {
+        "uncondTo": null,
+        "options": [
+          {
+            "content": "Hi everyone",
+            "branchTo": "sec1"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "sec1",
+      "messages": [
+        {
+          "sender": "Dr Wilson",
+          "delay": 1.0,
+          "content": "Great."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 3.0,
+          "content": "Since you are both here, I think we can start..."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 3.0,
+          "content": "Everyone, welcome to the CUBIC project!"
+        },
+        {
+          "sender": "Alvin",
+          "delay": 2.0,
+          "content": "Hooooooray~"
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 3.0,
+          "content": "I assume that you all know about the history this project"
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 2.0,
+          "content": "But let's do a quick recap"
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 4.0,
+          "content": "CUBIC, Crystal Utilisation Based on Interdimensional Communication"
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 5.0,
+          "content": "It is an interdimensional project because it connects people from two worlds."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 2.0,
+          "content": "Harley, your world, Earth"
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 2.0,
+          "content": "And the world of Alvin and I, Thyroc"
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 7.0,
+          "content": "Six years ago on Thyroc, these special crystals appeared from nowhere, and were later analysed by curious researchers"
+        },
+        {
+          "sender": "Alvin",
+          "delay": 2.0,
+          "content": "BIG discovery!"
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 7.0,
+          "content": "These crystals have strong and smooth outer shells and the structures of their cores are subtle and complex"
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 7.0,
+          "content": "With countless trial-and-errors and some luck, the core of some crystals broke down and turned into some luminous particles"
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 9.0,
+          "content": "This process is later named as sublimation, and these particles are called ponectors which were soon realised to be safe and high-density power sources"
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 8.0,
+          "content": "However, the amount of ponectors is not stable. They showed a weird property of almost random dis- and reappearance."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 4.0,
+          "content": "Now let's hold off here and see what has happened on Earth then."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 7.0,
+          "content": "Ponectors were witnessed at many positions on Earth, and researchers also realised their value and unstable property."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 9.0,
+          "content": "After long-term experiments, researchers from both worlds found the approach to stably control the dis- and reappearing of ponectors, revealing the famous conclusion..."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 2.0,
+          "content": "Ponectors can be transmitted between Earth and Thyroc!"
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 5.0,
+          "content": "Researchers from both worlds then worked together, built the first ponector network"
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 3.0,
+          "content": "A data and power network"
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 9.0,
+          "content": "With the construction of ponector network, the investigation of crystals and ponectors had never been so extensively concerned and supported in both worlds."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 6.0,
+          "content": "On one hand, researchers decoded the complex structures of crystals and formalised their common logic."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 15.0,
+          "content": "On the other hand, monitoring data and statistical analysis amazingly indicated that the amount and generation speed of new crystals on Thyroc is correlated with the amount and activity of Haskell projects on Earth."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 10.0,
+          "content": "Again, the researchers from both worlds together invented a device which is now called the sublimator"
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 15.0,
+          "content": "A sublimator can scan the core of a crystal, and then interpret its structure as a puzzle to be solved with Haskell coding. Your answer to this puzzle is going to be converted to a sequence of operations on the core of that crystal, and if your answer is correct, the core will sublimate and generated ponectors will be collected by the sublimator."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 10.0,
+          "content": "And two year ago, the CUBIC project started."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 10.0,
+          "content": "Harley and Alvin, in the CUBIC project, you will work together, collect and sublimate crystals. A ratio of the collected ponectors will be used as power source or to support the network, and the rest are your reward."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 5.0,
+          "content": "@Alvin"
+        },
+        {
+          "sender": "Alvin",
+          "delay": 2.0,
+          "content": "I'm here"
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 7.0,
+          "content": "You have the crystal storage and the sublimator, and I know you have learned about the basic operations."
+        },
+        {
+          "sender": "Alvin",
+          "delay": 3.0,
+          "content": "Yes"
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 3.0,
+          "content": "And @Harley"
+        },
+        {
+          "sender": "system",
+          "delay": 1.0,
+          "content": "Dr Wilson mentioned you in conversation"
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 5.0,
+          "content": "You may decide and authorise the usage of sublimator when Alvin shares the interface with you"
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 6.0,
+          "content": "I guess you have been told about the usage of sublimator interface via ponector network, have you?"
+        }
+      ],
+      "endDelay": 1.0,
+      "question": null,
+      "branch": {
+        "uncondTo": null,
+        "options": [
+          {
+            "content": "Yes",
+            "branchTo": "sec1a"
+          },
+          {
+            "content": "Actually not yet",
+            "branchTo": "sec1b"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "sec1a",
+      "messages": [
+        {
+          "sender": "Dr Wilson",
+          "delay": 2.0,
+          "content": "Wonderful."
+        }
+      ],
+      "endDelay": 0.0,
+      "question": null,
+      "branch": {
+        "uncondTo": "sec2",
+        "options": null
+      }
+    },
+    {
+      "tag": "sec1b",
+      "messages": [
+        {
+          "sender": "Dr Wilson",
+          "delay": 8.0,
+          "content": "I see. Don't worry, Harley. Alvin, could you help me load those demonstrating crystals from your storage? They are all virtualised I think."
+        },
+        {
+          "sender": "Alvin",
+          "delay": 2.0,
+          "content": "No problem."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 10.0,
+          "content": "Oh, I almost forgot. For the purpose of practice, all the sublimated crystals will be virtualised and stored in your crystal storage, we have made some virtual crystals by ourselves as well, you can visit and try to sublimate them at any time."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 7.0,
+          "content": "If a virtual crystal carries a ponector generation count, no actual ponectors will be generated by sublimation, but the generation count will be treated as your extra reward."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 8.0,
+          "content": "Now, Harley, the analysed crystal should be available at your terminal right away. Could you open it, fill in the content as it describes and click the sublimate button?"
+        }
+      ],
+      "endDelay": 0.0,
+      "question": {
+        "tag": "demo0",
+        "expectedTime": 0,
+        "isOptional": false,
+        "isTimed": false,
+        "reward": 5,
+        "title": "Virtual Crystal (A001)"
+      },
+      "branch": {
+        "uncondTo": "sec1c",
+        "options": null
+      }
+    },
+    {
+      "tag": "sec1c",
+      "messages": [
+        {
+          "sender": "Dr Wilson",
+          "delay": 2.0,
+          "content": "Great."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 8.0,
+          "content": "Sometimes our operations on a crystal could go wrong, and in this case, its core will be distorted and the sublimator will reduce the expected ponector output."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 8.0,
+          "content": "This virtual crystal has a wrong operation sequence build-in, you will not be able to modify it, but you can see how wrong operations affect the crystal. You can skip it if you already know about this."
+        }
+      ],
+      "endDelay": 0.0,
+      "question": {
+        "tag": "demo1",
+        "expectedTime": 0,
+        "isOptional": true,
+        "isTimed": false,
+        "reward": 20,
+        "title": "Virtual Crystal (E005)"
+      },
+      "branch": {
+        "uncondTo": "sec1d",
+        "options": null
+      }
+    },
+    {
+      "tag": "sec1d",
+      "messages": [
+        {
+          "sender": "Dr Wilson",
+          "delay": 15.0,
+          "content": "Now we will meet a special virtual crystal. It is timed to simulate the behaviours of some real crystals, which will decay rapidly once opened by the sublimator, you may need to speed up to preserve more ponectors."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 8.0,
+          "content": "Since this one is virtualised, I tuned its countdown timer to 10 seconds. Real crystals usually last much longer, the sublimator will tell you the approximate time you would have."
+        }
+      ],
+      "endDelay": 0.0,
+      "question": {
+        "tag": "demo2",
+        "expectedTime": 10,
+        "isOptional": false,
+        "isTimed": true,
+        "reward": 10,
+        "title": "Virtual Crystal (T002)"
+      },
+      "branch": {
+        "uncondTo": "sec1e",
+        "options": null
+      }
+    },
+    {
+      "tag": "sec1e",
+      "messages": [
+        {
+          "sender": "Dr Wilson",
+          "delay": 5.0,
+          "content": "Harley, these were some basics you may need to know now. You will learn more about sublimator and crystals in the future."
+        }
+      ],
+      "endDelay": 0.0,
+      "question": null,
+      "branch": {
+        "uncondTo": "sec2",
+        "options": null
+      }
+    },
+    {
+      "tag": "sec2",
+      "messages": [
+        {
+          "sender": "Dr Wilson",
+          "delay": 5.0,
+          "content": "So let's meet our first Haskell concept, the Boolean values. Alvin and Harley, get ready."
+        }
+      ],
+      "endDelay": 0.0,
+      "question": {
+        "tag": "q0",
+        "title": "Virtual Crystal (Boolean - 0)",
+        "reward": 10.0,
+        "expectedTime": 60,
+        "isTimed": false,
+        "isOptional": false
+      },
+      "branch": {
+        "uncondTo": "sec2a",
+        "options": []
+      }
+    },
+    {
+      "tag": "sec2a",
+      "messages": [
+        {
+          "sender": "Alvin",
+          "delay": 5.0,
+          "content": "Harley, I am sending my crystal to you, could you authorise the sublimation of it?"
+        }
+      ],
+      "endDelay": 0.0,
+      "question": null,
+      "branch": {
+        "uncondTo": null,
+        "options": [
+          {
+            "content": "Sure",
+            "branchTo": "sec2b"
+          },
+          {
+            "content": "Sorry, I am a little confused",
+            "branchTo": "sec2c"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "sec2b",
+      "messages": [
+        {
+          "sender": "Alvin",
+          "delay": 1.0,
+          "content": "Thanks."
+        }
+      ],
+      "endDelay": 0.0,
+      "question": {
+        "tag": "q1",
+        "title": "Virtual Crystal (Boolean - 1)",
+        "reward": 10.0,
+        "expectedTime": 60,
+        "isTimed": false,
+        "isOptional": false
+      },
+      "branch": {
+        "uncondTo": "sec3",
+        "options": []
+      }
+    },
+    {
+      "tag": "sec2c",
+      "messages": [
+        {
+          "sender": "Alvin",
+          "delay": 7.0,
+          "content": "Ah, I should have told you earlier. The sublimator we are using has two crystal slots, so we can work on two crystals at the same time."
+        },
+        {
+          "sender": "Alvin",
+          "delay": 8.0,
+          "content": "And to authorise, you just need to click sublimate and it will be processed as any other crystals. You can do this whenever you want to, the crystal won't run away."
+        }
+      ],
+      "endDelay": 0.0,
+      "question": {
+        "tag": "q1",
+        "title": "Virtual Crystal (Boolean - 1)",
+        "reward": 10.0,
+        "expectedTime": 60,
+        "isTimed": false,
+        "isOptional": true
+      },
+      "branch": {
+        "uncondTo": "sec3",
+        "options": []
+      }
+    },
+    {
+      "tag": "sec3",
+      "messages": [
+        {
+          "sender": "Dr Wilson",
+          "delay": 7.0,
+          "content": "And now the numbers. You will do some simple arithmetic computations to sublimate these crystals."
+        }
+      ],
+      "endDelay": 0.0,
+      "question": {
+        "tag": "q2",
+        "title": "Virtual Crystal (Number - 0)",
+        "reward": 10.0,
+        "expectedTime": 60,
+        "isTimed": false,
+        "isOptional": false
+      },
+      "branch": {
+        "uncondTo": "sec3a",
+        "options": []
+      }
+    },
+    {
+      "tag": "sec3a",
+      "messages": [
+        {
+          "sender": "Alvin",
+          "delay": 4.0,
+          "content": "My crystal is also ready to be sublimated."
+        }
+      ],
+      "endDelay": 0.0,
+      "question": {
+        "tag": "q3",
+        "title": "Virtual Crystal (Number - 1)",
+        "reward": 10.0,
+        "expectedTime": 60,
+        "isTimed": false,
+        "isOptional": true
+      },
+      "branch": {
+        "uncondTo": "sec4",
+        "options": []
+      }
+    },
+    {
+      "tag": "sec4",
+      "messages": [
+        {
+          "sender": "Dr Wilson",
+          "delay": 3.0,
+          "content": "Well done, Harley and Alvin."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 7.0,
+          "content": "Now I have a question. What will happen if I add a number and a Boolean value together? Will this operation be accepted by the sublimator?"
+        }
+      ],
+      "endDelay": 0.0,
+      "question": null,
+      "branch": {
+        "uncondTo": null,
+        "options": [
+          {
+            "content": "Yes",
+            "branchTo": "sec4a"
+          },
+          {
+            "content": "No",
+            "branchTo": "sec4b"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "sec4a",
+      "messages": [
+        {
+          "sender": "Dr Wilson",
+          "delay": 4.0,
+          "content": "Well, let's try this with a virtual crystal."
+        }
+      ],
+      "endDelay": 0.0,
+      "question": {
+        "tag": "q4",
+        "title": "Virtual Crystal (Number and Boolean)",
+        "reward": 10.0,
+        "expectedTime": 60,
+        "isTimed": false,
+        "isOptional": false
+      },
+      "branch": {
+        "uncondTo": "sec4c",
+        "options": []
+      }
+    },
+    {
+      "tag": "sec4c",
+      "messages": [
+        {
+          "sender": "Dr Wilson",
+          "delay": 5.0,
+          "content": "As you have seen, numbers and Boolean values cannot be added together in Haskell."
+        }
+      ],
+      "endDelay": 0.0,
+      "question": null,
+      "branch": {
+        "uncondTo": "sec5",
+        "options": []
+      }
+    },
+    {
+      "tag": "sec4b",
+      "messages": [
+        {
+          "sender": "Dr Wilson",
+          "delay": 2.0,
+          "content": "Reasonable idea."
+        }
+      ],
+      "endDelay": 0.0,
+      "question": null,
+      "branch": {
+        "uncondTo": "sec5",
+        "options": []
+      }
+    },
+    {
+      "tag": "sec5",
+      "messages": [
+        {
+          "sender": "Dr Wilson",
+          "delay": 7.0,
+          "content": "To be specific, every piece of code you have written till now is a Haskell expression, and each expression has its own type."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 12.0,
+          "content": "The type of an expression can be regarded as a collection of possible results it can evaluate to. For example, if an expression of type Bool can successfully evaluate to a certain value, its result can only be either True or False."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 15.0,
+          "content": "And the addition we mentioned just now would not work, because the arithmetic addition operator requires that the two added expressions have the same type, and this type must be one of those numeral types which can be added, which is not the case for adding a Boolean value and a number."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 5.0,
+          "content": "Give me a second, I think I can find a suitable virtual crystal as an example."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 7.0,
+          "content": "Let's try this one."
+        }
+      ],
+      "endDelay": 0.0,
+      "question": {
+        "tag": "q5",
+        "title": "Virtual Crystal (Types - 7)",
+        "reward": 10.0,
+        "expectedTime": 60,
+        "isTimed": false,
+        "isOptional": false
+      },
+      "branch": {
+        "uncondTo": "sec6",
+        "options": []
+      }
+    },
+    {
+      "tag": "sec6",
+      "messages": [
+        {
+          "sender": "Dr Wilson",
+          "delay": 5.0,
+          "content": "Till now, we have seen computations with numbers or Boolean values, but we have not mixed them up."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 8.0,
+          "content": "A Boolean value is a natural way to show if a condition is true or false, such as telling whether two numbers are equal or the first one is larger than the second one."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 5.0,
+          "content": "And Haskell provides us with corresponding operators, which will be introduced by this crystal."
+        }
+      ],
+      "endDelay": 0.0,
+      "question": {
+        "tag": "q6",
+        "title": "Virtual Crystal (Comparison - 0)",
+        "reward": 10.0,
+        "expectedTime": 60,
+        "isTimed": false,
+        "isOptional": false
+      },
+      "branch": {
+        "uncondTo": "sec6a",
+        "options": []
+      }
+    },
+    {
+      "tag": "sec6a",
+      "messages": [
+        {
+          "sender": "Dr Wilson",
+          "delay": 2.0,
+          "content": "Well done, Harley."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 10.0,
+          "content": "It seems that you sublimated the crystal earlier than Alvin this time."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 2.0,
+          "content": "Let me check..."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 5.0,
+          "content": "Ah, Alvin has got a tricky crystal."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 2.0,
+          "content": "Maybe we should give him more time..."
+        },
+        {
+          "sender": "Alvin",
+          "delay": 5.0,
+          "content": "Finally!!!"
+        },
+        {
+          "sender": "Alvin",
+          "delay": 5.0,
+          "content": "You have to see this! This crystal is just ridiculous!"
+        }
+      ],
+      "endDelay": 0.0,
+      "question": {
+        "tag": "q7",
+        "title": "Virtual Crystal (Comparison - 19)",
+        "reward": 10.0,
+        "expectedTime": 60,
+        "isTimed": false,
+        "isOptional": false
+      },
+      "branch": {
+        "uncondTo": "sec7",
+        "options": []
+      }
+    },
+    {
+      "tag": "sec7",
+      "messages": [
+        {
+          "sender": "Dr Wilson",
+          "delay": 3.0,
+          "content": "Sorry, Alvin. This crystal is designed to be so."
+        },
+        {
+          "sender": "Alvin",
+          "delay": 3.0,
+          "content": "It would be much easier if there is some sort of"
+        },
+        {
+          "sender": "Alvin",
+          "delay": 1.0,
+          "content": "container"
+        },
+        {
+          "sender": "Alvin",
+          "delay": 2.0,
+          "content": "to keep the intermediate results"
+        },
+        {
+          "sender": "Alvin",
+          "delay": 2.0,
+          "content": "or something like that..."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 5.0,
+          "content": "There does exist similar thing in Haskell and we are actually going to talk about it."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 2.0,
+          "content": "It is called variable."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 3.0,
+          "content": "A variable is a name you give to an expression."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 4.0,
+          "content": "We have used the concept of variable in mathematics for centuries."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 7.0,
+          "content": "We usually use x to denote some unknown value. And in equations such as 3x + b = c, x, b and c are all variables."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 3.0,
+          "content": "We can do similar things in Haskell."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 5.0,
+          "content": "Assigning an name to an expression and then using it in other expressions."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 5.0,
+          "content": "Try these crystals and you will probably have better understanding."
+        }
+      ],
+      "endDelay": 0.0,
+      "question": {
+        "tag": "q8",
+        "title": "Virtual Crystal (Variable - 5)",
+        "reward": 10.0,
+        "expectedTime": 60,
+        "isTimed": false,
+        "isOptional": false
+      },
+      "branch": {
+        "uncondTo": "sec7a",
+        "options": []
+      }
+    },
+    {
+      "tag": "sec7a",
+      "messages": [
+        {
+          "sender": "Alvin",
+          "delay": 5.0,
+          "content": "Truly much better this time."
+        }
+      ],
+      "endDelay": 0.0,
+      "question": {
+        "tag": "q9",
+        "title": "Virtual Crystal (Variable - 6)",
+        "reward": 10.0,
+        "expectedTime": 60,
+        "isTimed": false,
+        "isOptional": true
+      },
+      "branch": {
+        "uncondTo": "sec7b",
+        "options": []
+      }
+    },
+    {
+      "tag": "sec7b",
+      "messages": [
+        {
+          "sender": "Dr Wilson",
+          "delay": 5.0,
+          "content": "By the way, Alvin, a variable in Haskell is different from the container you may want."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 8.0,
+          "content": "With respect to the common concept of a container, it is a location where some content is stored, and you can change the content it holds."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 8.0,
+          "content": "But in Haskell, a variable is just a name or an identifier, and it is generally interchangeable with the expression which it is bound to."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 6.0,
+          "content": "And if you try to declare a variable for multiple times, the sublimator will report this as an error."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 3.0,
+          "content": "You can try this virtual crystal if you are interested."
+        }
+      ],
+      "endDelay": 0.0,
+      "question": {
+        "tag": "q9a",
+        "title": "Virtual Crystal (Multiple Declarations)",
+        "reward": 0.0,
+        "expectedTime": 60,
+        "isTimed": false,
+        "isOptional": true
+      },
+      "branch": {
+        "uncondTo": "sec8",
+        "options": []
+      }
+    },
+    {
+      "tag": "sec8",
+      "messages": [
+        {
+          "sender": "Dr Wilson",
+          "delay": 7.0,
+          "content": "You can start writing some more complex Haskell code now since you have learned how to use variables. But before that, you may want to meet a new kind of values."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 5.0,
+          "content": "Till now, all the values we have seen are just values."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 7.0,
+          "content": "I mean...they represent some concrete things, like true or false, numbers and so on."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 5.0,
+          "content": "But this new kind of values, they represent computation itself."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 4.0,
+          "content": "They are values which can process values."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 7.0,
+          "content": "And you won't be unfamiliar with them because you have already met them in mathematics."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 3.0,
+          "content": "They are functions."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 4.0,
+          "content": "These crystals will tell you more about functions in Haskell."
+        }
+      ],
+      "endDelay": 0.0,
+      "question": {
+        "tag": "q10",
+        "title": "Virtual Crystal (Function - 6)",
+        "reward": 10.0,
+        "expectedTime": 60,
+        "isTimed": false,
+        "isOptional": false
+      },
+      "branch": {
+        "uncondTo": "sec8a",
+        "options": []
+      }
+    },
+    {
+      "tag": "sec8a",
+      "messages": [
+        {
+          "sender": "Alvin",
+          "delay": 3.0,
+          "content": "Harley, this is my crystal."
+        }
+      ],
+      "endDelay": 0.0,
+      "question": {
+        "tag": "q11",
+        "title": "Virtual Crystal (Function - 9)",
+        "reward": 10.0,
+        "expectedTime": 60,
+        "isTimed": false,
+        "isOptional": true
+      },
+      "branch": {
+        "uncondTo": "sec9",
+        "options": []
+      }
+    },
+    {
+      "tag": "sec9",
+      "messages": [
+        {
+          "sender": "Dr Wilson",
+          "delay": 9.0,
+          "content": "Lambda abstractions are very powerful actually. The crystals only showed a small part of their usages and the amazing capability of functions in Haskell is yet to be revealed to you."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 6.0,
+          "content": "And you may have already realised, a lambda abstraction is an expression, so a variable can be bound to it."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 3.0,
+          "content": "Try these crystals and you will see how variables make it more convenient to work with functions."
+        }
+      ],
+      "endDelay": 0.0,
+      "question": {
+        "tag": "q12",
+        "title": "Virtual Crystal (Function - 15)",
+        "reward": 10.0,
+        "expectedTime": 60,
+        "isTimed": false,
+        "isOptional": false
+      },
+      "branch": {
+        "uncondTo": "sec9a",
+        "options": []
+      }
+    },
+    {
+      "tag": "sec9a",
+      "messages": [],
+      "endDelay": 0.0,
+      "question": {
+        "tag": "q13",
+        "title": "Virtual Crystal (Function - 16)",
+        "reward": 10.0,
+        "expectedTime": 60,
+        "isTimed": false,
+        "isOptional": true
+      },
+      "branch": {
+        "uncondTo": "sec10",
+        "options": []
+      }
+    },
+    {
+      "tag": "sec10",
+      "messages": [
+        {
+          "sender": "Dr Wilson",
+          "delay": 3.0,
+          "content": "I have a question for you at this moment."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 9.0,
+          "content": "Assume that besides lambda abstractions, we only have values of type Int to compute with. How many kinds of type annotations can you assign to the lambda abstraction (\\x -> x)?"
+        },
+        {
+          "sender": "Alvin",
+          "delay": 8.0,
+          "content": "Only (Int -> Int)?"
+        }
+      ],
+      "endDelay": 0.0,
+      "question": null,
+      "branch": {
+        "uncondTo": null,
+        "options": [
+          {
+            "content": "Only one",
+            "branchTo": "sec10a"
+          },
+          {
+            "content": "Infinitely many",
+            "branchTo": "sec10b"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "sec10a",
+      "messages": [
+        {
+          "sender": "Dr Wilson",
+          "delay": 7.0,
+          "content": "We only have Int values, so we can only get an integer and return exactly the same integer with (\\x -> x). Reasonable."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 5.0,
+          "content": "But how about the (\\x -> x) in this expression?"
+        }
+      ],
+      "endDelay": 0.0,
+      "question": null,
+      "branch": {
+        "uncondTo": "sec10c",
+        "options": []
+      }
+    },
+    {
+      "tag": "sec10b",
+      "messages": [
+        {
+          "sender": "Alvin",
+          "delay": 2.0,
+          "content": "Emmmm..."
+        },
+        {
+          "sender": "Alvin",
+          "delay": 4.0,
+          "content": "Infinitely many types sound good, but how?"
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 2.0,
+          "content": "We can look at this example."
+        }
+      ],
+      "endDelay": 0.0,
+      "question": null,
+      "branch": {
+        "uncondTo": "sec10c",
+        "options": []
+      }
+    },
+    {
+      "tag": "sec10c",
+      "messages": [
+        {
+          "sender": "Dr Wilson",
+          "delay": 3.0,
+          "content": "(\\x -> x) ((\\x -> x + 1) :: Int -> Int)"
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 4.0,
+          "content": "(\\x -> x) takes a lambda abstraction and returns it."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 4.0,
+          "content": "Its type becomes ((Int -> Int) -> (Int -> Int)) now."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 3.0,
+          "content": "And we can have more examples."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 3.0,
+          "content": "(\\x -> x) ((\\x y -> x + y) :: Int -> Int -> Int)"
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 5.0,
+          "content": "The (\\x -> x) here has type ((Int -> Int -> Int) -> (Int -> Int -> Int))."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 5.0,
+          "content": "We can construct infinitely many type annotations for (\\x -> x) in this way."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 10.0,
+          "content": "We have just inferred the type of (\\x -> x) based on its argument type, but in each case, (\\x -> x) was created as a fresh lambda abstraction, so it might seem to be natural for it to have different types."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 5.0,
+          "content": "Now let's define a function based on this lambda abstraction, for example, id x = x"
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 9.0,
+          "content": "What we expect from this function is simple, it exactly returns its argument without any modification. That's why it is known as the identity function."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 5.0,
+          "content": "And if the type signature cannot be omitted, what type signature shall I give to id?"
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 9.0,
+          "content": "There is no reason to write down all possible type signatures, which is also impractical because there are infinitely many of them."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 9.0,
+          "content": "However, if we fix a type for id, such as (Int -> Int), it will not work for input of type like (Int -> Int -> Int) and this is not the general solution we expect."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 15.0,
+          "content": "We have seen that the behaviour of id is uniform for input of any type, in other words, it does not require any extra information from the argument type to decide its behaviour, and the only thing need to be expressed by the type signature is the parameter type and return type of id are identical."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 7.0,
+          "content": "Thus, the solution is that we do not assign a concrete type, such as (Int -> Int) or ((Int -> Int) -> (Int -> Int)), to id."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 12.0,
+          "content": "Instead, we introduce a type variable, let's call it \"t0\" in this case, and then the type of id becomes (t0 -> t0), which means this function will accept an argument of type t0, which could be any type, and its return value has type t0 as well."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 8.0,
+          "content": "Now we have the general identity function we want: it does not care about the exact argument type, and it always simply return its argument as it is."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 7.0,
+          "content": "This property of id is called parametric polymorphism. We will explore this concept more thoroughly at a later stage."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 5.0,
+          "content": "Before that, let's meet some other useful types of data."
+        }
+      ],
+      "endDelay": 0.0,
+      "question": null,
+      "branch": {
+        "uncondTo": "sec11",
+        "options": []
+      }
+    },
+    {
+      "tag": "sec11",
+      "messages": [
+        {
+          "sender": "Alvin",
+          "delay": 1.0,
+          "content": "Sorry"
+        },
+        {
+          "sender": "Alvin",
+          "delay": 2.0,
+          "content": "Someone is knocking at my door"
+        },
+        {
+          "sender": "Alvin",
+          "delay": 2.0,
+          "content": "just one minute"
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 2.0,
+          "content": "No problem."
+        },
+        {
+          "sender": "Alvin",
+          "delay": 45.0,
+          "content": "That was my friend."
+        },
+        {
+          "sender": "Alvin",
+          "delay": 5.0,
+          "content": "A new crystal was collected this morning at block EH89AB."
+        },
+        {
+          "sender": "Alvin",
+          "delay": 2.0,
+          "content": "He brought it to me"
+        },
+        {
+          "sender": "Alvin",
+          "delay": 4.0,
+          "content": "And I need to go with him now"
+        },
+        {
+          "sender": "Alvin",
+          "delay": 5.0,
+          "content": "Something has happened...it's hard to explain"
+        },
+        {
+          "sender": "Alvin",
+          "delay": 2.0,
+          "content": "I'm sorry"
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 2.0,
+          "content": "That's fine, don't worry."
+        },
+        {
+          "sender": "Alvin",
+          "delay": 3.0,
+          "content": "Dr. Wilson, could you please start a progression evaluation? I think we have got enough virtual crystals"
+        },
+        {
+          "sender": "Alvin",
+          "delay": 2.0,
+          "content": "And now a real one."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 2.0,
+          "content": "I can start it now."
+        },
+        {
+          "sender": "Alvin",
+          "delay": 2.0,
+          "content": "Thanks."
+        },
+        {
+          "sender": "Alvin",
+          "delay": 5.0,
+          "content": "Harley, I will set up the sublimator. Could you please help me sublimate this real crystal?"
+        }
+      ],
+      "endDelay": 0.0,
+      "question": null,
+      "branch": {
+        "uncondTo": null,
+        "options": [
+          {
+            "content": "Sure",
+            "branchTo": "sec11a"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "sec11a",
+      "messages": [
+        {
+          "sender": "Alvin",
+          "delay": 3.0,
+          "content": "Thank you"
+        },
+        {
+          "sender": "Alvin",
+          "delay": 2.0,
+          "content": "I must leave now, sorry."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 2.0,
+          "content": "Alright, Harley, I started a progression evaluation."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 5.0,
+          "content": "The is part of the CUBIC project, you need to collect enough ponectors to enter the next stage."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 4.0,
+          "content": "The analysis result of the real crystal will be available very soon."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 2.0,
+          "content": "Good luck."
+        }
+      ],
+      "endDelay": 0.0,
+      "question": {
+        "tag": "q14",
+        "title": "Church Numerals",
+        "reward": 20.0,
+        "expectedTime": 600,
+        "isTimed": true,
+        "isOptional": false
+      },
+      "branch": {
+        "uncondTo": "end",
+        "options": []
+      }
+    },
+    {
+      "tag": "end",
+      "messages": [],
+      "endDelay": 0.0,
+      "question": null,
+      "branch": {
+        "uncondTo": null,
+        "options": []
+      }
+    }
+  ]
+}

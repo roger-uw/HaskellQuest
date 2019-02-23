@@ -1,0 +1,29 @@
+.haskellQuestButton {
+  color: var(--global-fc);
+  background-color: var(--global-fg);
+  padding: 0.1em 0.3em;
+  margin: 0;
+  border-style: solid;
+  border-color: var(--global-fg-bright);
+  border-width: 0.1em;
+  box-sizing: border-box;
+  font: var(--global-font);
+  outline: none;
+  transition: 0.3s;
+  letter-spacing: var(--global-letter-spacing);
+  font-variant-ligatures: none;
+}
+
+.haskellQuestButton:hover {
+  background-color: var(--global-fg-dark);
+}
+
+.haskellQuestButtonGlow {
+  composes: haskellQuestButton;
+  box-shadow: 0 0 0.5em 0.1em rgba(255, 255, 255, 0.6);
+}
+
+.haskellQuestButtonGlow:hover {
+  background-color: var(--global-fg-dark);
+  box-shadow: 0 0 0.5em 0.2em rgba(255, 255, 255, 0.6);
+}

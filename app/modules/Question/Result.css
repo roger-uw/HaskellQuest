@@ -1,0 +1,52 @@
+@keyframes result-trans {
+  0% {
+    background-position: -100%;
+  }
+
+  /* 50%{background-position: 95%;} */
+  100% {
+    background-position: 100%;
+  }
+}
+
+.result,
+.resultEvaluating,
+.resultAccepted,
+.resultError,
+.resultTimeout {
+  position: relative;
+  color: var(--global-fc);
+  padding: 0.1em 0.3em;
+  margin: 0;
+  box-sizing: border-box;
+  font: var(--global-font);
+  float: left;
+  letter-spacing: var(--global-letter-spacing);
+  font-variant-ligatures: none;
+}
+
+.resultEvaluating {
+  background: linear-gradient(
+    45deg,
+    var(--global-bg),
+    var(--global-fg),
+    var(--global-bg)
+  );
+  background-size: 300% 300%;
+  animation-name: result-trans;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+
+.resultAccepted {
+  background-color: rgb(82, 175, 53);
+}
+
+.resultError {
+  background-color: rgb(224, 58, 52);
+}
+
+.resultTimeout {
+  background-color: rgb(214, 115, 49);
+}

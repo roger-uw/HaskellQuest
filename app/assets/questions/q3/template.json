@@ -1,0 +1,5 @@
+{
+  "template": "[-??-] 3 [-??-] 5 [-??-] 2 [-??-] 4 [-??-]",
+  "prefix": "expr :: Double\nexpr = ",
+  "postfix": ""
+}

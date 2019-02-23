@@ -1,0 +1,237 @@
+{
+  "title": "Chapter 1",
+  "entryMark": 75.0,
+  "sections": [
+    {
+      "tag": "jump",
+      "messages": [],
+      "endDelay": 0.0,
+      "question": null,
+      "branch": {
+        "uncondTo": "sec0",
+        "options": null
+      }
+    },
+    {
+      "tag": "sec0",
+      "messages": [
+        {
+          "sender": "Dr Wilson",
+          "delay": 2.0,
+          "content": "Congratulations!"
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 4.0,
+          "content": "I think Alvin has set the sublimator to automatic mode."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 4.0,
+          "content": "So before he comes back, we can continue from where we stopped just now."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 5.0,
+          "content": "The crystal information is visible for both of you, so he can catch up later."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 3.0,
+          "content": "Alright, a new virtual crystal is ready."
+        }
+      ],
+      "endDelay": 0.0,
+      "question": {
+        "tag": "q15",
+        "title": "Virtual Crystal (List - 0)",
+        "reward": 10.0,
+        "expectedTime": 60,
+        "isTimed": false,
+        "isOptional": false
+      },
+      "branch": {
+        "uncondTo": "sec1",
+        "options": null
+      }
+    },
+    {
+      "tag": "sec1",
+      "messages": [
+        {
+          "sender": "Dr Wilson",
+          "delay": 2.0,
+          "content": "Well done, Harley."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 4.0,
+          "content": "Things are going to be more interesting now. Try this crystal."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 4.0,
+          "content": "Be careful. If I remember it correctly, this one is tricky."
+        }
+      ],
+      "endDelay": 0.0,
+      "question": {
+        "tag": "q16",
+        "title": "Virtual Crystal (List - 10)",
+        "reward": 20.0,
+        "expectedTime": 60,
+        "isTimed": false,
+        "isOptional": false
+      },
+      "branch": {
+        "uncondTo": "sec2",
+        "options": null
+      }
+    },
+    {
+      "tag": "sec2",
+      "messages": [
+        {
+          "sender": "Dr Wilson",
+          "delay": 2.0,
+          "content": "Great."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 6.0,
+          "content": "Before we come to a harder topic, let's see how conditional computation can be expressed in Haskell."
+        }
+      ],
+      "endDelay": 0.0,
+      "question": {
+        "tag": "q17",
+        "title": "Virtual Crystal (Condition - 5)",
+        "reward": 10.0,
+        "expectedTime": 60,
+        "isTimed": false,
+        "isOptional": false
+      },
+      "branch": {
+        "uncondTo": "sec3",
+        "options": null
+      }
+    },
+    {
+      "tag": "sec3",
+      "messages": [
+        {
+          "sender": "Dr Wilson",
+          "delay": 2.0,
+          "content": "Wonderful."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 4.0,
+          "content": "Harley, I believe that you still remember lambda abstractions."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 6.0,
+          "content": "A lambda abstraction can do various kinds of computation, use other variables, even create another lambda abstraction."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 4.0,
+          "content": "But there is one thing that a lambda abstraction cannot touch."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 3.0,
+          "content": "Itself."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 5.0,
+          "content": "A bare lambda abstraction does not has a name, so it cannot use itself inside its definition."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 7.0,
+          "content": "Actually, there is some tricky ways in Haskell to allow a lambda abstraction using itself, but we are not going to discuss about them now."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 8.0,
+          "content": "However, for functions, we assign a name to a function when we define it, so a function can call itself inside its definition."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 6.0,
+          "content": "This is called recursion and this crystal will give you a basic impression on how recursion works."
+        }
+      ],
+      "endDelay": 0.0,
+      "question": {
+        "tag": "q18",
+        "title": "Virtual Crystal (Recursion - 0)",
+        "reward": 15.0,
+        "expectedTime": 480,
+        "isTimed": false,
+        "isOptional": false
+      },
+      "branch": {
+        "uncondTo": "sec4",
+        "options": null
+      }
+    },
+    {
+      "tag": "sec4",
+      "messages": [
+        {
+          "sender": "Dr Wilson",
+          "delay": 4.0,
+          "content": "Now it's time to define a recursive function by yourself."
+        },
+        {
+          "sender": "Dr Wilson",
+          "delay": 4.0,
+          "content": "Be careful, this virtual crystal is timed."
+        }
+      ],
+      "endDelay": 0.0,
+      "question": {
+        "tag": "q19",
+        "title": "Virtual Crystal (Recursion - 2)",
+        "reward": 15.0,
+        "expectedTime": 300,
+        "isTimed": true,
+        "isOptional": false
+      },
+      "branch": {
+        "uncondTo": "end",
+        "options": null
+      }
+    },
+    {
+      "tag": "end",
+      "messages": [
+        {
+          "sender": "system",
+          "delay": 2.0,
+          "content": "Sorry, this chapter is still under construction."
+        }
+      ],
+      "endDelay": 0.0,
+      "question": null,
+      "branch": {
+        "uncondTo": "loop",
+        "options": []
+      }
+    },
+    {
+      "tag": "loop",
+      "messages": [],
+      "endDelay": 3600.0,
+      "question": null,
+      "branch": {
+        "uncondTo": "loop",
+        "options": []
+      }
+    }
+  ]
+}

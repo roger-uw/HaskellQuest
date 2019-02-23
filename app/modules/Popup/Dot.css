@@ -1,0 +1,24 @@
+@keyframes jump {
+  0% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 2em;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+.dot {
+  height: 1em;
+  width: 1em;
+  background-color: rgba(187, 187, 187, 0.774);
+  border-radius: 50%;
+  position: relative;
+  display: inline-block;
+  animation-name: jump;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}

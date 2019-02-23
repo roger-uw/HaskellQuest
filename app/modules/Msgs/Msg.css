@@ -1,0 +1,81 @@
+.iconContainer {
+  width: 3.5em;
+  height: 3.5em;
+}
+
+.iconContainer img {
+  width: 100%;
+  height: auto;
+}
+
+.msgTag {
+  color: rgba(240, 240, 240, 0.6);
+  font: var(--global-font);
+  font-size: 0.8em;
+  letter-spacing: var(--global-letter-spacing);
+  font-variant-ligatures: none;
+}
+
+.systemMsg {
+  clear: both;
+  position: relative;
+  max-width: 80%;
+  margin-bottom: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-evenly;
+}
+
+.playerMsg {
+  float: right;
+  clear: both;
+  position: relative;
+  max-width: 80%;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row-reverse;
+
+  /* align-items: center; */
+  align-items: flex-start;
+  margin-bottom: 2em;
+}
+
+.playerMsg .iconContainer {
+  float: right;
+  margin-left: 1em;
+  flex-shrink: 0;
+}
+
+.playerMsg .msgBody,
+.playerMsg .msgTag,
+.playerMsg .msgContent {
+  float: right;
+}
+
+.playerMsg .msgContent {
+  clear: right;
+}
+
+.npcMsg {
+  composes: playerMsg;
+  float: left;
+  flex-direction: row;
+}
+
+.npcMsg .iconContainer {
+  float: left;
+  margin-right: 1em;
+  flex-shrink: 0;
+}
+
+.npcMsg .msgBody,
+.npcMsg .msgTag,
+.npcMsg .msgContent {
+  float: left;
+}
+
+.npcMsg .msgContent {
+  clear: left;
+}

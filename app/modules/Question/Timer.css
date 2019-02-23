@@ -1,0 +1,38 @@
+@keyframes timer-trans {
+  0% {
+    top: -6em;
+  }
+  75% {
+    top: 1em;
+  }
+  85% {
+    top: -0.5em;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+.timerContainer {
+  position: absolute;
+  left: 20%;
+  z-index: 1000;
+  transform: translate(-50%, 0%);
+  margin: auto;
+  animation-name: timer-trans;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+  font: var(--global-font);
+  letter-spacing: var(--global-letter-spacing);
+  font-variant-ligatures: none;
+}
+
+.timerCountdown,
+.timerCountup {
+  color: var(--global-fc);
+  font-size: 2em;
+  background-color: var(--global-fg);
+  padding: 0.1em 0.3em 0;
+  border-radius: 0.2em;
+}

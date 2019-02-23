@@ -1,0 +1,33 @@
+.msgsContainer {
+  width: 40vw;
+  height: 100vh;
+  padding: 1em;
+  font: var(--global-font);
+  box-sizing: border-box;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.questionContainer {
+  composes: msgsContainer;
+  width: 60vw;
+  letter-spacing: var(--global-letter-spacing);
+  font-variant-ligatures: none;
+}
+
+.interface {
+  display: -webkit-flex;
+  align-items: center;
+  background-color: var(--global-bg);
+}
+
+.rewardBarContainer {
+  position: absolute;
+  top: 0;
+  left: 60%;
+  z-index: 900;
+  font: var(--global-font);
+  transform: translate(-50%, 0%);
+  letter-spacing: var(--global-letter-spacing);
+  font-variant-ligatures: none;
+}

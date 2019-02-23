@@ -1,0 +1,22 @@
+.infoMsg {
+  color: var(--global-fc);
+  width: 100%;
+  background-color: rgba(43, 41, 48, 0.582);
+  padding: var(--global-text-padding);
+  border-radius: 0.1em;
+  box-sizing: border-box;
+  box-shadow: var(--global-sd);
+  letter-spacing: var(--global-letter-spacing);
+  font-variant-ligatures: none;
+}
+
+.activeMsg {
+  composes: infoMsg;
+  background-color: var(--global-fg);
+}
+
+.inactiveMsg {
+  composes: infoMsg;
+  color: rgb(150, 150, 150);
+  background-color: var(--global-fg-dark);
+}

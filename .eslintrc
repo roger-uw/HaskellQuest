@@ -10,6 +10,23 @@
     "node": true
   },
   "rules": {
+    "no-nested-ternary": "warn",
+    "class-methods-use-this": "warn",
+    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
+    "one-var": "warn",
+    "no-lonely-if": "warn",
+    "no-unused-vars": [
+      "error",
+      {
+        "vars": "all",
+        "varsIgnorePattern": "(report(Fatal|Caught)Error|Component|path|styles)",
+        "args": "none",
+        "ignoreRestSiblings": false
+      }
+    ],
+    "no-else-return": "warn",
+    "global-require": "warn",
+    "object-shorthand": ["error", "consistent"],
     "arrow-parens": ["off"],
     "compat/compat": "error",
     "consistent-return": "off",
@@ -59,7 +76,10 @@
       "error",
       { "extensions": [".js", ".jsx"] }
     ],
-    "react/prefer-stateless-function": "off"
+    "react/prefer-stateless-function": "off",
+    "react/no-array-index-key": "warn",
+    "react/forbid-prop-types": "warn",
+    "import/no-dynamic-require": "warn"
   },
   "plugins": ["flowtype", "import", "promise", "compat", "react"],
   "settings": {

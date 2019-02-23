@@ -1,27 +1,17 @@
-/* eslint global-require: off */
+/* eslint global-require: 0, flowtype-errors/show-errors: 0 */
 
 /**
  * This module executes inside of electron's main process. You can start
  * electron renderer process from here and communicate with the other processes
  * through IPC.
  *
- * When running `yarn build` or `yarn build-main`, this file is compiled to
+ * When running `npm run build` or `npm run build-main`, this file is compiled to
  * `./app/main.prod.js` using webpack. This gives us some performance wins.
  *
  * @flow
  */
-import { app, BrowserWindow } from 'electron';
-import { autoUpdater } from 'electron-updater';
-import log from 'electron-log';
-import MenuBuilder from './menu';
-
-export default class AppUpdater {
-  constructor() {
-    log.transports.file.level = 'info';
-    autoUpdater.logger = log;
-    autoUpdater.checkForUpdatesAndNotify();
-  }
-}
+import { ipcMain, app, BrowserWindow, dialog, shell } from 'electron';
+import * as path from 'path';
 
 let mainWindow = null;
 
@@ -70,10 +60,14 @@ app.on('ready', async () => {
   mainWindow = new BrowserWindow({
     show: false,
     width: 1024,
-    height: 728
+    height: 728,
+    minWidth: 640,
+    minHeight: 480
   });
 
   mainWindow.loadURL(`file://${__dirname}/app.html`);
+
+  // mainWindow.webContents.openDevTools();
 
   // @TODO: Use 'ready-to-show' event
   //        https://github.com/electron/electron/blob/master/docs/api/browser-window.md#using-ready-to-show-event
@@ -81,22 +75,70 @@ app.on('ready', async () => {
     if (!mainWindow) {
       throw new Error('"mainWindow" is not defined');
     }
-    if (process.env.START_MINIMIZED) {
-      mainWindow.minimize();
-    } else {
-      mainWindow.show();
-      mainWindow.focus();
-    }
+    mainWindow.show();
+    mainWindow.focus();
+  });
+
+  mainWindow.webContents.on('new-window', (event, url) => {
+    event.preventDefault();
+    shell.openExternal(url);
+  });
+
+  mainWindow.on('close', e => {
+    e.preventDefault();
+    mainWindow.webContents.send('control-channel', 'closing');
   });
 
   mainWindow.on('closed', () => {
     mainWindow = null;
   });
 
-  const menuBuilder = new MenuBuilder(mainWindow);
-  menuBuilder.buildMenu();
+  ipcMain.on('msg-channel', (event, arg) => {
+    switch (arg) {
+      case 'exit':
+        mainWindow.destroy();
+        break;
+      case 'path':
+        if (
+          process.env.NODE_ENV === 'development' ||
+          process.env.DEBUG_PROD === 'true'
+        ) {
+          event.sender.send(
+            'path-channel',
+            path.join(path.dirname(app.getPath('exe')), '..', '..', '..')
+          );
+        } else {
+          event.sender.send('path-channel', path.dirname(app.getPath('exe')));
+        }
+        break;
+      default:
+        console.log(arg);
+        break;
+    }
+  });
 
-  // Remove this if your app does not use auto updates
-  // eslint-disable-next-line
-  new AppUpdater();
+  ipcMain.on('error-channel', (event, arg) => {
+    const title =
+      (arg.isCaught ? 'Recoverable Error: ' : 'Fatal Error: ') + arg.errName;
+    dialog.showMessageBox(
+      {
+        type: 'error',
+        buttons: [],
+        title: title,
+        message: arg.errMsg
+      },
+      (resp, check) => {
+        if (!arg.isCaught) {
+          mainWindow.destroy();
+        } else {
+          dialog.showMessageBox({
+            type: 'info',
+            buttons: [],
+            title: title,
+            message: 'Restarting the game may solve this problem.'
+          });
+        }
+      }
+    );
+  });
 });

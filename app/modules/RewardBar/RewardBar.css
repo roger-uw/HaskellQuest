@@ -1,0 +1,7 @@
+.rewardBar {
+  font-size: 2em;
+  color: var(--global-fc);
+  background-color: rgba(112, 61, 109, 1);
+  padding: 0.1em 0.3em 0;
+  border-radius: 0 0 0.2em 0.2em;
+}

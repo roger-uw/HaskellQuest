@@ -1,0 +1,5 @@
+{
+  "template": "42 + [-False-]",
+  "prefix": "expr = ",
+  "postfix": ""
+}

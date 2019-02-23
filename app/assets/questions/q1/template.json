@@ -1,0 +1,5 @@
+{
+  "template": "[-??-] True [-??-] (False [-??-] True)",
+  "prefix": "expr :: Bool\nexpr = ",
+  "postfix": ""
+}
