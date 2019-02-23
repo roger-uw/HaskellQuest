@@ -34,7 +34,7 @@
 
 3. Start HaskellQuest
 
-   Please download HaskellQuestWindows.zip.
+   Please download [HaskellQuest-0.1.0-alpha.1-Windows.zip](https://github.com/roger-uw/HaskellQuest/releases/download/v0.1.0-alpha.1/HaskellQuest-0.1.0-alpha.1-Windows.zip).
 
    Unzip the downloaded file and you will get a folder named HaskellQuest.
 
