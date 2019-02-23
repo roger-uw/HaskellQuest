@@ -1,8 +1,6 @@
 {
-  "chptList": [
-    { "title": "Prelude", "currentMsg": 3, "currentSect": 2, "entryMark": 0 }
-  ],
+  "chptList": [],
   "currentChpt": 0,
-  "totalReward": 5,
+  "totalReward": 0,
   "newChptIndex": -1
 }

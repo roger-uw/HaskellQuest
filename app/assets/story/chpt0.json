@@ -8,7 +8,7 @@
       "endDelay": 0.0,
       "question": null,
       "branch": {
-        "uncondTo": "tsec0",
+        "uncondTo": "sec0",
         "options": null
       }
     },
