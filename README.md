@@ -34,13 +34,13 @@
 
 3. Start HaskellQuest
 
-Please download HaskellQuestWindows.zip.
+   Please download HaskellQuestWindows.zip.
 
-Unzip the downloaded file and you will get a folder named HaskellQuest.
+   Unzip the downloaded file and you will get a folder named HaskellQuest.
 
-Entering the HaskellQuest folder and double-clicking startHaskellQuest.bat will start the game. If the game does not start in 30 seconds, enter the win-unpacked folder and find a file named HaskellQuest.exe, double-clicking this file will start the game.
+   Entering the HaskellQuest folder and double-clicking startHaskellQuest.bat will start the game. If the game does not start in 30 seconds, enter the win-unpacked folder and find a file named HaskellQuest.exe, double-clicking this file will start the game.
 
-_For non-roman alphabets users, please switch to the English input method while playing HaskellQuest._
+   _For non-roman alphabets users, please switch to the English input method while playing HaskellQuest._
 
 ### macOS
 
