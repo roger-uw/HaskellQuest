@@ -40,7 +40,7 @@ Unzip the downloaded file and you will get a folder named HaskellQuest.
 
 Entering the HaskellQuest folder and double-clicking startHaskellQuest.bat will start the game. If the game does not start in 30 seconds, enter the win-unpacked folder and find a file named HaskellQuest.exe, double-clicking this file will start the game.
 
-_For users using non-roman alphabets, please switch to the English input method while playing HaskellQuest._
+_For non-roman alphabets users, please switch to the English input method while playing HaskellQuest._
 
 ### macOS
 
@@ -67,9 +67,11 @@ Coming soon
 ## FAQ
 
 1. `command not found` or `not recognized as an internal or external command, operable program or batch file` when run `ghc-pkg recache`.
+
    Solution: Skip this command.
 
 2. The system already has another version of GHC installed, and the `stack install` command complains about the versions of dependencies.
+
    Solution: Try again with the following commands.
 
 ```
